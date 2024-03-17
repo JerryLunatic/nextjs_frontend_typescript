@@ -7,7 +7,7 @@ export default function Home() {
 
     useEffect(() => {
         async function fetchData() {
-            const response = await fetch('http://test-backend:8080/data');
+            const response = await fetch('http://test-backend/data');
             const data = await response.json();
             setPeople(data);
             console.log(data)
