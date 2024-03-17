@@ -7,7 +7,7 @@ export default function Home() {
 
     useEffect(() => {
         async function fetchData() {
-            const response = await fetch('http://172.18.0.2:8080/data');
+            const response = await fetch('http://localhost:8080/data');
             const data = await response.json();
             setPeople(data);
             console.log(data)
