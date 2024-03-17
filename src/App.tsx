@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 
 export default function Home() {
-    const [people, setPeople] = useState([]);
+    const [people, setPeople] = useState(["name":"Test","address":"Test-add","contact":"Test-con"]);
 
 
     useEffect(() => {
